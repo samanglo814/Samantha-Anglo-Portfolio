@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Samantha Anglo · Projects</title>
+  <meta name="description" content="Projects, coursework, and experience from Samantha Anglo, a computer science student." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Reusable icons -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+    <symbol id="i-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M19 12l-7 7-7-7"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4M9 18c-4.51 2-5-2-7-2"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></symbol>
+    <symbol id="i-braces" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H7a2 2 0 0 0-2 2v5a2 2 0 0 1-2 2 2 2 0 0 1 2 2v5a2 2 0 0 0 2 2h1M16 21h1a2 2 0 0 0 2-2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5a2 2 0 0 0-2-2h-1"/></symbol>
+    <symbol id="i-layout" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></symbol>
+    <symbol id="i-db" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5M3 12a9 3 0 0 0 18 0"/></symbol>
+    <symbol id="i-terminal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m4 17 6-6-6-6M12 19h8"/></symbol>
+    <symbol id="i-cap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+    <symbol id="i-pr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><path d="M13 6h3a2 2 0 0 1 2 2v7M6 9v12"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  </svg>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <header class="nav" id="top">
+    <div class="wrap nav-inner">
+      <a href="#top" class="identity">
+        <span class="monogram mono">SA</span>
+        <span>Samantha Anglo</span>
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact" class="btn btn-outline">Get in touch <svg class="ic"><use href="#i-arrow"/></svg></a></li>
+        </ul>
+      </nav>
+      <button class="menu-btn" id="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+        <svg class="ic-lg"><use href="#i-menu"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ===================== HERO ===================== -->
+    <section class="hero">
+      <div class="wrap hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow mono"><span class="status-dot"></span>COMPUTER SCIENCE · [UNIVERSITY NAME]</p>
+          <h1>Hi, I'm Samantha.<br />Here's my work.</h1>
+          <p class="lead">
+            I'm a computer science student at the University of Florida. This is where I keep my projects,
+            from class assignments to things I made for fun, with the code and the story behind each one.
+          </p>
+          <div class="actions">
+            <a href="#projects" class="btn btn-primary">View projects <svg class="ic"><use href="#i-down"/></svg></a>
+            <a href="assets/Samantha_Anglo_Resume.pdf" class="btn btn-outline" target="_blank" rel="noopener">Résumé <svg class="ic"><use href="#i-download"/></svg></a>
+          </div>
+          <ul class="text-links">
+            <li><a href="https://github.com/samanglo814" target="_blank" rel="noopener">GitHub <svg class="ic-sm"><use href="#i-arrow"/></svg></a></li>
+            <li><a href="https://www.linkedin.com/in/[your-linkedin]" target="_blank" rel="noopener">LinkedIn <svg class="ic-sm"><use href="#i-arrow"/></svg></a></li>
+            <li><a href="mailto:samanthanicole.anglo@gmail.com">Email <svg class="ic-sm"><use href="#i-arrow"/></svg></a></li>
+          </ul>
+        </div>
+
+        <!-- Featured build preview. Uses the same screenshot as your featured project. -->
+        <a class="hero-preview" href="GeoGaurd">
+          <div class="preview-backdrop" aria-hidden="true"></div>
+          <div class="browser">
+            <div class="browser-bar"><i></i><i></i><i></i><span class="mono">geoguard / geographic analysis</span></div>
+            <div class="shot">
+              <img src="assets/projects/geogaurd-dashboard.png" alt="GeoGuard's Geographic Analysis page flagging impossible travel from New York to London" />
+            </div>
+          </div>
+          <div class="preview-caption mono">
+            <span class="accent">FEATURED BUILD / GEOGUARD</span>
+            <span>FULL-STACK WEB APP ↗</span>
+          </div>
+        </a>
+      </div>
+      <div class="context-strip">
+        <div class="wrap context-inner">
+          <p class="mono accent">GEOGUARD&nbsp;&nbsp;/&nbsp;&nbsp;PROMPTIONARY&nbsp;&nbsp;/&nbsp;&nbsp;BREW &amp; BLOOM&nbsp;&nbsp;/&nbsp;&nbsp;SASE MOBILE</p>
+          <p class="muted">Currently building: <a href="#archive">[what you're working on now]</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <!--
+      HOW TO EDIT A PROJECT
+      - Screenshot: put it in assets/projects/ and update the <img src>. 16:10 works best.
+      - Keep descriptions honest and specific: what it does, what you did, what you learned.
+      - Delete any link (Live demo, Write-up) you don't have.
+    -->
+    <section class="section section-light" id="projects">
+      <div class="wrap">
+        <div class="section-head split">
+          <div>
+            <p class="label mono">01 / SELECTED WORK</p>
+            <h2>Projects.</h2>
+            <p class="intro">The problems, decisions, and code behind the things I've built.</p>
+          </div>
+        </div>
+
+        <!-- Featured project: GeoGuard -->
+        <article class="project project-featured" id="project-1">
+          <div class="project-media tint-rose">
+            <div class="media-top mono"><span class="accent">GEOGUARD / GEOGRAPHIC ANALYSIS</span><span>[SEMESTER YEAR]</span></div>
+            <div class="browser">
+              <div class="browser-bar"><i></i><i></i><i></i><span class="mono">geoguard / geographic analysis</span></div>
+              <div class="shot">
+                <img src="assets/projects/geogaurd-dashboard.png" alt="GeoGuard's Geographic Analysis page: a map of a transaction path from New York to London marked as impossible travel" loading="lazy" />
+              </div>
+            </div>
+          </div>
+          <div class="project-body">
+            <p class="label mono">01 / FULL-STACK WEB APP</p>
+            <h3>GeoGuard</h3>
+            <p class="desc">A fraud-detection dashboard that flags "impossible travel": two card transactions in places too far apart to reach in the time between them.</p>
+            <p class="meta">[Individual project] · [Your role, e.g., Full-stack developer]</p>
+            <ul class="tags"><li>React</li><li>TypeScript</li><li>Node.js</li><li>Supabase</li><li>OpenRouteService</li></ul>
+            <dl class="notes">
+              <dt class="mono">HOW IT WORKS</dt>
+              <dd>An Express API pulls transaction data from Supabase and compares each transaction with the previous one. GeoGaurd calculates the geographic distance and available travel time between locations to determine whether the movement is realistic and flag potentially impossible travel.</dd>
+              <dt class="mono">TECHNICAL CHALLENGE</dt>
+              <dd>One of the biggest challenges was calculating realistic travel feasibility between transactions. I had to combine geographic distance, time differences, and different transaction scenarios while also generating believable synthetic data to properly test the system.</dd>
+              <dt class="mono">WHAT I LEARNED</dt>
+              <dd>I learned how the backend, database, and geographic analysis can work together to solve a real-world fraud detection problem. I also became more confident working with Express, Supabase, APIs, and testing, and learned how important realistic test data is when building detection logic.</dd>
+            </dl>
+            <div class="project-links">
+              <a href="https://github.com/samanglo814/GeoGaurd" target="_blank" rel="noopener">Repository <svg class="ic-sm"><use href="#i-arrow"/></svg></a>
+            </div>
+          </div>
+        </article>
+
+        <div class="project-grid">
+          <!-- Promptionary -->
+          <article class="project" id="project-2">
+            <div class="project-media tint-plum">
+              <div class="browser browser-dark">
+                <div class="browser-bar"><i></i><i></i><i></i><span class="mono">promptionary</span></div>
+                <div class="shot">
+                  <img src="assets/projects/promptionary-gameplay.png" alt="Promptionary round results: the secret image, a player's guess, and the AI-generated image with a 20% match score" loading="lazy" />
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <p class="label mono">02 / MULTIPLAYER AI GAME</p>
+              <h3>Promptionary</h3>
+              <p class="desc">A party game where one player describes a secret image, the other players guess what it shows, and AI redraws the description. Players score on accuracy, clarity, and speed.</p>
+              <p class="meta">[Team Project] · [Frontend Development & Product Design]</p>
+            <ul class="tags"><li>React</li><li>TypeScript</li><li>Tailwind CSS</li><li>Node.js</li><li>Express</li><li>Supabase</li><li>Gemini API</li></ul>
+              <dl class="notes">
+                <dt class="mono">TECHNICAL CHALLENGE</dt>
+                <dd>One of our biggest challenges was keeping gameplay synchronized across multiple devices while coordinating AI-generated images, player guesses, and scoring. We also had to work around API rate limits and browser microphone restrictions to create a reliable experience.</dd>
+                <dt class="mono">OUTCOME</dt>
+                <dd>Built and deployed a fully playable multiplayer game in a single hackathon weekend. Through playtesting, we refined the guessing mechanics and gameplay flow based on real player feedback, making the experience more intuitive and engaging.</dd>
+              </dl>
+              <div class="project-links">
+                <a href="https://github.com/samanglo814/Promptionary" target="_blank" rel="noopener">Repository <svg class="ic-sm"><use href="#i-arrow"/></svg></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Brew and Bloom (design stage) -->
+          <article class="project" id="project-3">
+            <div class="project-media tint-sand">
+              <div class="browser">
+                <div class="browser-bar"><i></i><i></i><i></i><span class="mono">brew &amp; bloom / figma prototype</span></div>
+                <div class="shot">
+                  <img src="assets/projects/brew-and-bloom-figma.png" alt="Brew and Bloom Figma design: the step where you choose a drink before starting a 25-minute focus session" loading="lazy" />
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <p class="label mono">03 / IN PROGRESS · DESIGN STAGE</p>
+              <h3>Brew &amp; Bloom</h3>
+              <p class="desc">A focus timer with a café theme. You pick a drink, "brew" it, and work through a 25-minute focus session. The design is done in Figma, and development is next.</p>
+              <p class="meta">[Individual project] · Design, [development]</p>
+              <ul class="tags"><li>Figma</li><li>[Planned stack]</li></ul>
+              <dl class="notes">
+                <dt class="mono">DESIGN DECISIONS</dt>
+                <dd>[Why a four-step flow (choose, brew, focus, complete) and what you were going for with the look.]</dd>
+                <dt class="mono">NEXT STEPS</dt>
+                <dd>[What you'll build first and with which tools.]</dd>
+              </dl>
+              <div class="project-links">
+                <a href="[figma-prototype-url]" target="_blank" rel="noopener">View Figma prototype <svg class="ic-sm"><use href="#i-arrow"/></svg></a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== MORE PROJECTS (ARCHIVE) ===================== -->
+    <section class="section section-dark" id="archive">
+      <div class="wrap">
+        <div class="section-head split">
+          <div>
+            <p class="label mono">02 / MORE PROJECTS</p>
+            <h2>Smaller builds &amp; coursework.</h2>
+          </div>
+          <p class="aside">Class assignments, experiments, and works in progress. Add a row for anything you're proud of.</p>
+        </div>
+        <div class="archive-scroll">
+          <table class="archive">
+            <thead>
+              <tr class="mono"><th>YEAR</th><th>PROJECT</th><th>CONTEXT</th><th>BUILT WITH</th><th><span class="sr-only">Link</span></th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="mono">[2026]</td>
+                <td><strong>[Unix shell in C]</strong><span>[Pipes, redirection, and background jobs]</span></td>
+                <td>[Operating Systems]</td>
+                <td class="mono">[C · Linux]</td>
+                <td><a href="[repo-url]" target="_blank" rel="noopener" aria-label="Repository for Unix shell"><svg class="ic"><use href="#i-arrow"/></svg></a></td>
+              </tr>
+              <tr>
+                <td class="mono">[2026]</td>
+                <td><strong>[Data structures library]</strong><span>[Hash map, heap, and graph with unit tests]</span></td>
+                <td>[Data Structures]</td>
+                <td class="mono">[Java · JUnit]</td>
+                <td><a href="[repo-url]" target="_blank" rel="noopener" aria-label="Repository for data structures library"><svg class="ic"><use href="#i-arrow"/></svg></a></td>
+              </tr>
+              <tr>
+                <td class="mono">[2025]</td>
+                <td><strong>[Hackathon project]</strong><span>[Built in 36 hours with a team of 3]</span></td>
+                <td>[Hackathon name]</td>
+                <td class="mono">[Python · Flask]</td>
+                <td><a href="[devpost-url]" target="_blank" rel="noopener" aria-label="Demo for hackathon project"><svg class="ic"><use href="#i-arrow"/></svg></a></td>
+              </tr>
+              <tr>
+                <td class="mono">[2025]</td>
+                <td><strong>[Discord bot / CLI tool]</strong><span>[Something small you built for yourself or friends]</span></td>
+                <td>Personal</td>
+                <td class="mono">[JavaScript]</td>
+                <td><a href="[repo-url]" target="_blank" rel="noopener" aria-label="Repository for side project"><svg class="ic"><use href="#i-arrow"/></svg></a></td>
+              </tr>
+              <tr>
+                <td class="mono">2026</td>
+                <td><strong>This portfolio</strong><span>Hand-written HTML, CSS, and JavaScript</span></td>
+                <td>Personal</td>
+                <td class="mono">HTML · CSS · JS</td>
+                <td><a href="https://github.com/samanglo814/Samantha-Anglo-Portfolio" target="_blank" rel="noopener" aria-label="Repository for this portfolio"><svg class="ic"><use href="#i-arrow"/></svg></a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <a class="more-link" href="https://github.com/samanglo814" target="_blank" rel="noopener">Everything else is on GitHub <svg class="ic-sm"><use href="#i-arrow"/></svg></a>
+      </div>
+    </section>
+
+    <!-- ===================== TOOLKIT ===================== -->
+    <section class="section section-light" id="toolkit">
+      <div class="wrap">
+        <div class="section-head split">
+          <div>
+            <p class="label mono">03 / TOOLKIT</p>
+            <h2>What I've built with.</h2>
+          </div>
+          <p class="aside">Each list shows where I've actually used the tool, so you can go look at the code.</p>
+        </div>
+        <div class="tool-grid">
+          <div class="tool-card">
+            <svg class="tool-icon"><use href="#i-braces"/></svg>
+            <h3>Languages</h3>
+            <ul class="mono"><li>[Python]</li><li>[Java]</li><li>[JavaScript / TypeScript]</li><li>[C]</li><li>[SQL]</li></ul>
+            <p class="used">Used in: [Project Two], [Unix shell]</p>
+          </div>
+          <div class="tool-card">
+            <svg class="tool-icon"><use href="#i-layout"/></svg>
+            <h3>Frontend</h3>
+            <ul class="mono"><li>React</li><li>TypeScript</li><li>HTML &amp; CSS</li><li>Tailwind CSS</li></ul>
+            <p class="used">Used in: GeoGuard, this portfolio</p>
+          </div>
+          <div class="tool-card">
+            <svg class="tool-icon"><use href="#i-db"/></svg>
+            <h3>Backend &amp; data</h3>
+            <ul class="mono"><li>Node.js &amp; Express</li><li>Supabase (PostgreSQL)</li><li>REST APIs</li><li>OpenRouteService API</li></ul>
+            <p class="used">Used in: GeoGuard</p>
+          </div>
+          <div class="tool-card">
+            <svg class="tool-icon"><use href="#i-terminal"/></svg>
+            <h3>Tools</h3>
+            <ul class="mono"><li>Git &amp; GitHub</li><li>Vite</li><li>Figma</li><li>[Other tools]</li></ul>
+            <p class="used">Used in: most projects</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== EXPERIENCE ===================== -->
+    <section class="section section-light bordered" id="experience">
+      <div class="wrap two-col">
+        <div class="col-intro">
+          <p class="label mono">04 / EXPERIENCE</p>
+          <h2>Experience.</h2>
+          <p class="intro">Internships, research, campus jobs, and team projects.</p>
+          <p class="hint mono">No internship yet? A TA role, research lab, or long team project belongs here too.</p>
+        </div>
+        <div class="entries">
+          <article class="entry entry-with-shot">
+            <div>
+              <div class="entry-top">
+                <p class="org"><span class="sq"></span>SASE · [University Name]</p>
+                <p class="mono date">[MONTH YEAR] – PRESENT</p>
+              </div>
+              <h3>Mobile App Team Member</h3>
+              <p class="desc">Joined the student team building SASE's mobile app, which members use to find events, committees, and programs and apply to them.</p>
+              <ul class="bullets">
+                <li>[What you've worked on so far, even if it's small: a screen, a bug fix, getting the project set up.]</li>
+                <li>[What you're working on next.]</li>
+              </ul>
+              <ul class="tags"><li>[React Native / Swift / Flutter]</li><li>Frontend</li><li>Team project</li></ul>
+            </div>
+            <figure class="phone">
+              <img src="assets/projects/sase-mobile.png" alt="The SASE mobile app's Programs screen, showing open applications and events" loading="lazy" />
+            </figure>
+          </article>
+          <article class="entry">
+            <div class="entry-top">
+              <p class="org"><span class="sq"></span>[Organization] · [Location / Remote]</p>
+              <p class="mono date">[MONTH YEAR – MONTH YEAR]</p>
+            </div>
+            <h3>[Software Engineering Intern]</h3>
+            <p class="desc">[One sentence on the team and what you worked on.]</p>
+            <ul class="bullets">
+              <li>[The feature or system you worked on, and the tools you used.]</li>
+              <li>[A decision you made and what came of it. Link a PR or demo if you can.]</li>
+            </ul>
+            <ul class="tags"><li>[Feature development]</li><li>[Code review]</li><li>[Testing]</li></ul>
+          </article>
+          <article class="entry">
+            <div class="entry-top">
+              <p class="org"><span class="sq"></span>[Lab, course team, or campus job]</p>
+              <p class="mono date">[MONTH YEAR – PRESENT]</p>
+            </div>
+            <h3>[Research Assistant / Teaching Assistant]</h3>
+            <p class="desc">[One sentence on what the group does and your part in it.]</p>
+            <ul class="bullets">
+              <li>[Your individual contribution.]</li>
+              <li>[Link to a paper, poster, repo, or write-up.]</li>
+            </ul>
+            <ul class="tags"><li>[Python]</li><li>[Data analysis]</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== EDUCATION ===================== -->
+    <section class="section section-rose" id="education">
+      <div class="wrap two-col">
+        <div class="col-intro">
+          <p class="label mono">05 / EDUCATION</p>
+          <h2>Education.</h2>
+        </div>
+        <div>
+          <div class="degree">
+            <span class="degree-icon"><svg><use href="#i-cap"/></svg></span>
+            <div>
+              <h3>[University Name]</h3>
+              <p class="muted">B.S. in Computer Science · Expected [Month Year]</p>
+              <p class="mono label-sm">[CITY, STATE]&nbsp;&nbsp;/&nbsp;&nbsp;[GPA OR HONORS, OPTIONAL]</p>
+            </div>
+          </div>
+          <p class="label mono course-label">RELEVANT COURSEWORK</p>
+          <ul class="courses">
+            <li>Data Structures &amp; Algorithms</li>
+            <li>Operating Systems</li>
+            <li>Object-Oriented Programming</li>
+            <li>Computer Networks</li>
+            <li>Database Systems</li>
+            <li>Software Engineering</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== BEYOND THE CLASSROOM ===================== -->
+    <section class="section section-light" id="community">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="label mono">06 / BEYOND THE CLASSROOM</p>
+          <h2>Hackathons, clubs &amp; open source.</h2>
+        </div>
+        <div class="community-grid">
+          <article class="contrib">
+            <p class="contrib-type mono"><svg class="ic"><use href="#i-terminal"/></svg>HACKATHONS</p>
+            <h3>[Hackathon project]</h3>
+            <p class="mono small muted">[Event] · [Month Year] · [Award, if any]</p>
+            <p class="desc">[The problem, what your team built, and the piece you owned.]</p>
+            <a href="[devpost-url]" target="_blank" rel="noopener">Project / demo <svg class="ic-sm"><use href="#i-arrow"/></svg></a>
+          </article>
+          <article class="contrib">
+            <p class="contrib-type mono"><svg class="ic"><use href="#i-pr"/></svg>OPEN SOURCE</p>
+            <h3>[Repository / contribution]</h3>
+            <p class="mono small muted">[Contributor] · [Dates]</p>
+            <p class="desc">[A bug fix, docs improvement, or feature, and why it mattered.]</p>
+            <a href="[pr-url]" target="_blank" rel="noopener">Pull request <svg class="ic-sm"><use href="#i-arrow"/></svg></a>
+          </article>
+          <article class="contrib">
+            <p class="contrib-type mono"><svg class="ic"><use href="#i-users"/></svg>CLUBS</p>
+            <h3>[ACM / Women in Computing / GDSC]</h3>
+            <p class="mono small muted">[Role] · [Dates]</p>
+            <p class="desc">[A workshop you ran, an event you helped with, or a team you joined.]</p>
+            <a href="[club-url]" target="_blank" rel="noopener">Club / event <svg class="ic-sm"><use href="#i-arrow"/></svg></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="section section-light" id="about">
+      <div class="wrap about">
+        <figure class="about-photo">
+          <div class="photo-frame">
+            <img src="assets/Professional%20Headshot.PNG" alt="Samantha Anglo" loading="lazy" />
+          </div>
+          <figcaption class="mono"><span>[A CAPTION ABOUT YOU]</span></figcaption>
+        </figure>
+        <div class="about-text">
+          <p class="label mono">07 / ABOUT</p>
+          <h2>A little about me.</h2>
+          <p class="about-lead">[One sentence on what you enjoy about building software.]</p>
+          <p class="muted">
+            [What got you into computer science, the kinds of problems you like working on,
+            and what you want to learn next. Keep it short and in your own voice.]
+          </p>
+          <hr />
+          <p class="label mono">AWAY FROM THE EDITOR</p>
+          <ul class="tags"><li>[Interest]</li><li>[Interest]</li><li>[Interest]</li><li>[Interest]</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="section section-rose" id="contact">
+      <div class="wrap contact">
+        <div class="contact-text">
+          <p class="label mono">08 / CONTACT</p>
+          <h2 class="display">Want to talk about<br />a project?</h2>
+          <p class="intro">I'm looking for software engineering internships for [Summer 2027]. I'm also happy to talk about any of the work here.</p>
+          <div class="actions">
+            <a href="mailto:samanthanicole.anglo@gmail.com" class="btn btn-primary">Say hello <svg class="ic"><use href="#i-mail"/></svg></a>
+            <a href="assets/Samantha_Anglo_Resume.pdf" class="btn btn-outline" target="_blank" rel="noopener">Résumé <svg class="ic"><use href="#i-download"/></svg></a>
+          </div>
+        </div>
+        <ul class="channels">
+          <li><a href="mailto:samanthanicole.anglo@gmail.com">
+            <span class="mono ch-label"><svg class="ic"><use href="#i-mail"/></svg>EMAIL</span>
+            <span class="ch-value">samanthanicole.anglo@gmail.com</span><svg class="ic ch-arrow"><use href="#i-arrow"/></svg>
+          </a></li>
+          <li><a href="https://github.com/samanglo814" target="_blank" rel="noopener">
+            <span class="mono ch-label"><svg class="ic"><use href="#i-github"/></svg>GITHUB</span>
+            <span class="ch-value">github.com/samanglo814</span><svg class="ic ch-arrow"><use href="#i-arrow"/></svg>
+          </a></li>
+          <li><a href="https://www.linkedin.com/in/[your-linkedin]" target="_blank" rel="noopener">
+            <span class="mono ch-label"><svg class="ic"><use href="#i-linkedin"/></svg>LINKEDIN</span>
+            <span class="ch-value">linkedin.com/in/[your-linkedin]</span><svg class="ic ch-arrow"><use href="#i-arrow"/></svg>
+          </a></li>
+        </ul>
+      </div>
+      <footer class="wrap footer">
+        <p>© <span id="year"></span> Samantha Anglo · Built by hand with HTML, CSS &amp; JavaScript.</p>
+        <a href="#top">Back to top ↑</a>
+      </footer>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
