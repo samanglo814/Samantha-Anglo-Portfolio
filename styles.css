@@ -181,7 +181,17 @@ ul { list-style: none; }
 .project-links { display: flex; gap: 22px; margin-top: auto; }
 .project-links a, .contrib > a, .more-link { display: inline-flex; align-items: center; gap: 5px; font-size: .84rem; font-weight: 600; }
 .project-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
-.project-grid .project-media { min-height: 320px; }
+/* Side-by-side cards: same-size screenshot area so the text lines up */
+.project-grid .project-media { aspect-ratio: 4 / 3; }
+/* Featured card mirrored: text left, screenshot right */
+.project-reverse { grid-template-columns: 620fr 660fr; margin: 40px 0 0; }
+.project-reverse .project-media { order: 2; }
+/* A card left alone on the last row spans the full width, screenshot on the right */
+.project-grid > .project:last-child:nth-child(odd) {
+  grid-column: 1 / -1; display: grid; grid-template-columns: 620fr 660fr;
+}
+.project-grid > .project:last-child:nth-child(odd) .project-media { order: 2; aspect-ratio: auto; padding: 46px 28px; }
+.project-grid > .project:last-child:nth-child(odd) .project-body { padding: 40px 36px; justify-content: center; }
 
 /* ============ Archive (dark) ============ */
 .section-dark .label { color: #d79ab2; }
@@ -298,6 +308,11 @@ ul { list-style: none; }
   .hero-inner { grid-template-columns: 1fr; padding: 56px 0; }
   .hero-preview { max-width: 604px; }
   .project-featured, .project-grid { grid-template-columns: 1fr; }
+  .project-reverse .project-media { order: 0; }
+  .project-grid > .project:last-child:nth-child(odd) { display: flex; }
+  .project-grid > .project:last-child:nth-child(odd) .project-media { order: 0; padding: 28px; }
+  .project-grid > .project:last-child:nth-child(odd) .project-body { padding: 34px 32px; }
+  .project-grid .project-media { aspect-ratio: auto; }
   .two-col { grid-template-columns: 1fr; gap: 24px; }
   .community-grid { grid-template-columns: 1fr; gap: 28px; }
   .about, .contact { grid-template-columns: 1fr; }
@@ -322,7 +337,6 @@ ul { list-style: none; }
   .tool-grid, .courses { grid-template-columns: 1fr; }
   .project-body, .project-featured .project-body { padding: 26px 22px; }
   .project-media, .project-featured .project-media { padding: 20px; }
-  .project-grid .project-media { min-height: 0; }
   .media-top, .preview-caption { flex-direction: column; gap: 4px; }
   .text-links { flex-wrap: wrap; gap: 16px; }
   .degree { flex-direction: column; }
